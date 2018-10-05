@@ -12,12 +12,14 @@
     <span data-t="error-occured"></span>
     <span id="error"></span>
   </div>
-  <div class="notification hidden" id="notification">
-    <div class="message">
-      <span id="version"></span> -
-      <a target="_blank" href="changelog.html" data-t="changelog"></a>
+  <div class="notification-wrapper hidden" id="notification">
+    <div class="notification">
+      <div class="message">
+        <span id="version"></span> -
+        <a target="_blank" href="changelog.html" data-t="changelog"></a>
+      </div>
+      <div class="clear" id="notification-clear"><i class="material-icons">clear</i></div>
     </div>
-    <div class="clear" id="notification-clear"><i class="material-icons">clear</i></div>
   </div>
   <div class="header" id="header">
     <div class="gradient">
@@ -29,7 +31,17 @@
           <i class="icon-other">&#xf09b;</i>
         </a>
       </div>
-      <span id="title"></span>
+      <div class="song-info">
+        <div class="song-title"></div>
+        <div class="artist"></div>
+        <div class="difficulty">
+          <div id="difficulty-name"></div>
+          <div class="difficulty-stars">
+            <i class="material-icons">star</i>
+            <span id="difficulty-stars"></span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="calculation-settings">
@@ -46,7 +58,6 @@
         <label for="misses" data-t="misses"></label>
         <input type="text" id="misses" value="0">
       </div>
-      <div class="clearfix"></div>
     </div>
     <div class="mods">
       <div class="mod mod-hd">
@@ -81,7 +92,6 @@
         <input type="checkbox" id="mod-so" value="4096">
         <label for="mod-so" data-t="mod-spunout"></label>
       </div>
-      <div class="clearfix"></div>
     </div>
   </div>
   <div class="result-wrapper">

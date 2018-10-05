@@ -1,12 +1,13 @@
 {
   "name": "ezpp!",
-  "version": "1.5.10",
+  "version": "1.5.11",
   "description": "Browser extension for calculating pp!",
   "main": "src/js/index.js",
   "dependencies": {
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "autoprefixer": "^6.3.6",
+    "babel-eslint": "^10.0.0",
     "babel-loader": "^8.0.2",
     "copy-webpack-plugin": "^4.5.2",
     "cross-env": "^5.1.5",
